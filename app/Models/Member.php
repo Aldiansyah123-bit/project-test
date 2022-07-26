@@ -11,8 +11,8 @@ class Member extends Model
 {
     use HasFactory;
 
-    // protected $fillable = ['group_id','name','address','phone','email','profile'];
-    protected $fillable = ['member_id','group','nama','alamat','hp','email','profile'];
+    protected $fillable = ['group_id','name','address','phone','email','profile'];
+    // protected $fillable = ['member_id','group','nama','alamat','hp','email','profile'];
 
     public function group()
     {
