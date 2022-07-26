@@ -25,7 +25,7 @@ class MemberController extends Controller
      */
     public function index()
     {
-        $data   = Member::with('group')->orderBy('member_id','DESC')->get();
+        $data   = Member::with('group')->orderBy('id','DESC')->get();
         $group  = Group::all();
         return view('members.index', compact('data','group'));
     }
